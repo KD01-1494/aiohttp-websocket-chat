@@ -11,9 +11,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-#register-form {
-	display: flex;
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -41,6 +38,9 @@ body {
 	margin-top: 100px;
 }
 #chatForm {
+	display: flex;
+}
+#register-form {
 	display: flex;
 }
 .message-box {
