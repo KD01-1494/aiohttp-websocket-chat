@@ -1,0 +1,111 @@
+* {
+	font-family: 'Roboto';
+
+}
+body {
+	height: 100vh;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+#register-form {
+	display: flex;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+.chat-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.chat-window {
+	height: 400px;
+	overflow: auto;
+	scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto | thin | none;
+    transition: 0.2s;
+}
+.insert-box {
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+}
+#chatForm {
+	display: flex;
+}
+.message-box {
+	min-width: 400px;
+	height: 30px;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	font-size: 16px;
+	transition: 0.2s;
+	padding: 6px;
+	word-wrap: break-word;
+
+}
+.message-box:focus {
+	outline: 0;
+	border-bottom: 2px solid #758BFD;
+}
+.submit-button > button {
+	min-height: 100%;
+	width: 100px;
+	margin-left: 25px;
+	outline: 0;
+	border: 0;
+	border-radius: 4px;
+	color: #ffffff;
+    background: #4676D7;
+	font-size: 16px;
+	transition: 0.2s;
+}
+.submit-button > button:hover {
+	background: #758BFD;
+}
+.submit-button > button:active {
+	background: #AEB8FE;
+	box-shadow: 0 0 0 3px #cbd6ee;
+}
+
+.chat-message {
+	display: flex;
+	flex-direction: row;
+	background: #f5f5f5;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+.chat-message:hover {
+	background: #e9ecff;
+}
+.chat-message > .chat-message-author {
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	padding: 6px;
+	align-self: center;
+}
+.chat-message > .chat-message-text {
+	width: 500px;
+	word-wrap: break-word;
+	align-self: center;
+}
+.chat-message > .chat-admin {
+	color: #DC143C;
+}
+.chat-message > .chat-moderator {
+	color: #32CD32;
+}
