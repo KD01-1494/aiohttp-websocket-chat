@@ -69,6 +69,7 @@ class Handler:
             raise e
 
         finally:
+            await ws.close()
             ChatSetting.CHAT_MEMBERS.remove(
                 (request.cookies['user-id'], request.cookies['user-name'], ws)
             )
